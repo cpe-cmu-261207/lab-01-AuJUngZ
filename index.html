@@ -1,21 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Resume Website</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style-index.css" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">My Resume</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experience.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--content-->
+    <div class="content">
+      <div class="maininfo">
+        <div class="myinfo">
+          <div class="logo">
+            <img src="./image/IMG_20220101_130731.jpg" alt="logo" />
+          </div>
+          <div class="textinfo">
+            <span>
+              Hi, I'm AuJung. I'm a web developer. I'm a student at Chiang Mai
+              University. This is my first project website. I hope you enjoy it.
+              You can give me feedback or advice. I'm not very good at design.
+              But I try to do it as best as I can.
+            </span>
+            <hr style="width: 50%" , size="3" , color="black" />
+            <button type="button" class="btn btn-info">More Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--skill-->
+    <div class="skill">
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">C++ language</h5>
+          <p class="card-text">
+            C++ for me, I think I can write it easily without worrying too much.
+          </p>
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Java language</h5>
+          <p class="card-text">
+            If I read from c++ and saw java, it's probably not different because
+            it's almost the same, but if I had to choose which one I was good
+            at, it would be c++.
+          </p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Web Developer</h5>
+          <p class="card-text">
+            Building this website is just the beginning. Still not very skilled
+            Give it a little more time and it'll be fine.
+          </p>
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">20%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+      <!--footer-->
+      <div class="footer">
+        <script>
+          var d = new Date();
+          var year = d.getFullYear();
+          document.write("©Copyright " + year + " AuJung");
+        </script>
+      </div>
+    </div>
+  </body>
 </html>
